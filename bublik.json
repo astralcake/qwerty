@@ -1,0 +1,23 @@
+{
+    "jobs": [
+        {
+            "type": "http",
+            "count": 1,
+            "args": {
+                "request": {
+                    "method": "GET",
+                    "path": "https://ldz.lv/",
+                    "headers": {
+                        "User-Agent": "{{ random_user_agent }}"
+                    }
+                },
+                "client": {
+                    "static_host": {
+                        "addr": "89.207.247.43:443",
+                        "is_tls": true
+                    }
+                }
+            }
+        }
+    ]
+}
